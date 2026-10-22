@@ -17,7 +17,7 @@ cores = {
     "=" : "\033[31m=\033[0m"
 }
 
-input("\nAperte ENTER para gerar o DNA da bactéria Candidatus Carsonella: ")
+input("\nAperte ENTER para gerar a fita de DNA da bactéria Candidatus Carsonella ruddii: ")
 
 bac_dna = ["A", "A", "G", "T", "T", "A", "T", "T", "C", "T", "T", "A", "T", "A", "G", "T", "T", "C", "C", "A", "G"]
 bac_dna2 = ["T", "T", "C", "A", "A", "T", "A", "A", "G", "A", "A", "T", "A", "T", "C", "A", "A", "G", "G", "T", "C"]
@@ -33,7 +33,7 @@ for base, basepar in dnacompleto:
     
     print(f"| {cores[base]} {cores[pontes]} {cores[basepar]} |")
 
-print("\nPorcentagens da fita de DNA da bactéria Candidatus Carsonella: ")
+print("\nPorcentagens da fita de DNA da Candidatus Carsonella ruddii: ")
 calc(dadosbacteria)
 
 
@@ -57,3 +57,5 @@ if rnabacteria.lower() in ["s", "sim"]:
     
     print("\nPorcentagem da fita de RNA da bactéria: ")
     calc(bac_rna)
+else:
+    print("\nFim do programa, obrigado por utilizar o DNApice :D")

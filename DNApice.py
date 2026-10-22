@@ -21,9 +21,14 @@ cores = {
 
 print("\033[96m\nDNAPICE: GERADOR DE DNA E RNA EM PYTHON\033[0m")
 
-
-quant = int(input("\nDigite a quantidade desejada de bases nitrogenadas: "))
-vezes = int(input("\nQuantos pares de bases o usuário deseja gerar por vez? Digite 0 para ver o total. "))
+quantpadrao = input("\nO usuário deseja escolher a quantidade de bases nitrogenadas? S/N ")
+if quantpadrao.lower() in ["s", "sim"]:
+    quant = int(input("\nDigite a quantidade desejada de bases nitrogenadas: "))
+else:
+    quant = 20
+if quant == 20: 
+    print("\n Foi escolhida a quantidade padrão (20) de bases nitrogenadas.")
+vezes = int(input(" Quantos pares de bases o usuário deseja gerar por vez? Digite 0 para ver o total. "))
 fita = []
 
 
@@ -51,9 +56,10 @@ calc(fita)
 
 
 rnapergunta = input("\nO usuario deseja ver esta fita em RNA? S/N ")
-vezes_rna = int(input("\nQuantos pares de bases do RNA o usuário deseja gerar por vez? Digite 0 para ver o total. "))
 
 if rnapergunta.lower() in ["s", "sim"]:
+    vezes_rna = int(input("\nQuantos pares de bases do RNA o usuário deseja gerar por vez? Digite 0 para ver o total. "))
+
     fita_rna = []
     transcricao = {"A": "U", "T": "A", "C": "G", "G": "C"}
     
@@ -78,6 +84,8 @@ if rnapergunta.lower() in ["s", "sim"]:
         
     print("\nPorcentagens da fita de RNA: ")
     calc(fita_rna)
+else:
+    print("\nFim do programa, obrigado por utilizar o DNApice :D")
     
     
     
