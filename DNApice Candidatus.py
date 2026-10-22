@@ -58,4 +58,6 @@ if rnabacteria.lower() in ["s", "sim"]:
     print("\nPorcentagem da fita de RNA da bactéria: ")
     calc(bac_rna)
 else:
-    print("\nFim do programa, obrigado por utilizar o DNApice :D")
+    print("\nFim do programa, obrigado por utilizar o nosso DNApice :D")
+
+print("\nFim do programa, obrigado por utilizar o nosso DNApice :D")

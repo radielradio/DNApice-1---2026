@@ -85,4 +85,6 @@ if rnapergunta.lower() in ["s", "sim"]:
     print("\nPorcentagens da fita de RNA: ")
     calc(fita_rna)
 else:
-    print("\nFim do programa, obrigado por utilizar o DNApice :D")
+    print("\nFim deste programa, continue para o próximo :D")
+
+print("\nFim deste programa, continue para o próximo :D")
