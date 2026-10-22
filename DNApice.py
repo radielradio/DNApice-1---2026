@@ -86,6 +86,3 @@ if rnapergunta.lower() in ["s", "sim"]:
     calc(fita_rna)
 else:
     print("\nFim do programa, obrigado por utilizar o DNApice :D")
-    
-    
-    
