@@ -8,16 +8,16 @@ def calc(serie):
 bases = {"A" : "T",     "T" : "A",    "C" : "G",    "G" : "C"}
 rnabases = {"A" : "U",    "U" : "A",    "C" : "G",    "G" : "C"}
 cores = {
-    "A" : "\033[34mA\033[0m",
-    "T" : "\033[33mT\033[0m",
-    "C" : "\033[35mC\033[0m",
-    "G" : "\033[32mG\033[0m",
-    "U" : "\033[33mU\033[0m",
-    "\u2261" : "\033[36m\u2261\033[0m",
-    "=" : "\033[31m=\033[0m"
+    "A" : "\033[34mA\033[0m",           #Azul Escuro
+    "T" : "\033[31mT\033[0m",           #Vermelho
+    "C" : "\033[35mC\033[0m",           #Roxo
+    "G" : "\033[32mG\033[0m",           #Verde
+    "U" : "\033[33mU\033[0m",           #Marrom
+    "\u2261" : "\033[36m\u2261\033[0m", #Ciano
+    "=" : "\033[33m=\033[0m"            #Marrom
 }
 
-input("\nAperte ENTER para gerar a fita de DNA da bactéria Candidatus Carsonella ruddii: ")
+input("\nAperte ENTER para gerar um fragmento pré-selecionado de fita do DNA da bactéria Candidatus Carsonella ruddii: ")
 
 bac_dna = ["A", "A", "G", "T", "T", "A", "T", "T", "C", "T", "T", "A", "T", "A", "G", "T", "T", "C", "C", "A", "G"]
 bac_dna2 = ["T", "T", "C", "A", "A", "T", "A", "A", "G", "A", "A", "T", "A", "T", "C", "A", "A", "G", "G", "T", "C"]

@@ -10,25 +10,25 @@ def calc(serie):
 bases = {"A" : "T",     "T" : "A",    "C" : "G",    "G" : "C"}
 rnabases = {"A" : "U",    "U" : "A",    "C" : "G",    "G" : "C"}
 cores = {
-    "A" : "\033[34mA\033[0m",
-    "T" : "\033[33mT\033[0m",
-    "C" : "\033[35mC\033[0m",
-    "G" : "\033[32mG\033[0m",
-    "U" : "\033[33mU\033[0m",
-    "\u2261" : "\033[36m\u2261\033[0m",
-    "=" : "\033[31m=\033[0m"
+    "A" : "\033[34mA\033[0m",           #Azul Escuro
+    "T" : "\033[31mT\033[0m",           #Vermelho
+    "C" : "\033[35mC\033[0m",           #Roxo
+    "G" : "\033[32mG\033[0m",           #Verde
+    "U" : "\033[33mU\033[0m",           #Marrom
+    "\u2261" : "\033[36m\u2261\033[0m", #Ciano
+    "=" : "\033[33m=\033[0m"            #Marrom
 }
 
 print("\033[96m\nDNAPICE: GERADOR DE DNA E RNA EM PYTHON\033[0m")
 
-quantpadrao = input("\nO usuário deseja escolher a quantidade de bases nitrogenadas? S/N ")
+quantpadrao = input("\nO usuário deseja escolher a quantidade de bases nitrogenadas? S/N: ")
 if quantpadrao.lower() in ["s", "sim"]:
-    quant = int(input("\nDigite a quantidade desejada de bases nitrogenadas: "))
+    quant = int(input("\nDigite a quantidade desejada de bases nitrogenadas: \n"))
 else:
     quant = 20
 if quant == 20: 
     print("\n Foi escolhida a quantidade padrão (20) de bases nitrogenadas.")
-vezes = int(input(" Quantos pares de bases o usuário deseja gerar por vez? Digite 0 para ver o total. "))
+vezes = int(input(" Quantos pares de bases o usuário deseja gerar por vez? Digite 0 para ver o total. \n "))
 fita = []
 
 
